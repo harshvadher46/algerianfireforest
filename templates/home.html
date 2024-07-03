@@ -2,17 +2,16 @@
     <body>
         <h1>FWI PREDICTION </h1>
 
-
-            <form acttion="{{url_for('predict_datapoint')}}" method="post">
-                <input type = "text" name = "Temperature" placeholder = "Temperature" required="required"/>
-                <input type = "text" name = "RH" placeholder = "RH" required="required"/><br>
-                <input type = "text" name = "Ws" placeholder = "Ws" required="required"/><br>
-                <input type = "text" name = "Rain" placeholder = "Rain" required="required"/><br>
-                <input type = "text" name = "FFMC" placeholder = "FFMC" required="required"/><br>    
-                <input type = "text" name = "DMC" placeholder = "DMC" required="required"/><br>
-                <input type = "text" name = "ISI" placeholder = "ISI" required="required"/><br>
-                <input type = "text" name = "Classes" placeholder = "Classes" required="required"/><br>
-                <input type = "text" name = "Region" placeholder = "Region" required="required"/><br>
+            <form acttion="{{url_for('predict_datapoint')}}" class = "form" method="post">
+                <input type = "text" name = "Temperature" placeholder = "Temperature" required="required"/><br>
+                <input type = "text" name = "RH" placeholder = "RH()" required="required"/><br>
+                <input type = "text" name = "Ws" placeholder = "Ws(6 to 29)" required="required"/><br>
+                <input type = "text" name = "Rain" placeholder = "Rain(0 to 16.8 mm)" required="required"/><br>
+                <input type = "text" name = "FFMC" placeholder = "FFMC(28.6 to 92.5)" required="required"/><br>    
+                <input type = "text" name = "DMC" placeholder = "DMC(1.1 to 65.9)" required="required"/><br>
+                <input type = "text" name = "ISI" placeholder = "ISI()" required="required"/><br>
+                <input type = "text" name = "Classes" placeholder = "Classes(0/1)" required="required"/><br>
+                <input type = "text" name = "Region" placeholder = "Region(0/1)" required="required"/><br>
 
                 <button type="submit" class="btn-btn-primary btn-block btn-large">Tap Here Predict</button>
             </form>
